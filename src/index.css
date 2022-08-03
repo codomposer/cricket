@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "zuumerough-bold";
+  src: url("./assets/font/zuume-rough/Fontspring-DEMO-zuumerough-bold.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "zuumerough-bolditalic";
+  src: url("./assets/font/zuume-rough/Fontspring-DEMO-zuumerough-bolditalic.otf");
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.sidebar {
+  @apply max-w-[280px];
+}
+
+.sidebar-content {
+  @apply px-6;
+}
+
+.sidebar-item {
+  @apply flex py-3 pl-11 hover:bg-primary/10 cursor-pointer transition-all duration-150;
+}
+
+h1 {
+  @apply text-[70px] font-bold leading-[77px];
+}
+
+h2 {
+  @apply text-[60px];
+}
+
+.schedule-container {
+  background-color: #008A81;
+  opacity: 0.8;
+  border-radius: 40px;
+}
+
+.schedule-container img {
+  mix-blend-mode: soft-light;
+  border-radius: 40px;
+}
+
+.transform-logo {
+  transform: matrix(1, -0.09, 0.09, 1, 0, 0);
 }
