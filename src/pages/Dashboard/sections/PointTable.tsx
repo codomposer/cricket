@@ -73,7 +73,7 @@ const PointTable = () => {
           <h3 className="text-[#fff] w-max">ODDS BY USERS</h3>
           <LineSmall className="ml-10" />
         </div>
-        <div className="flex items-center justify-center w-[300px] overflow-hidden">
+        <div className="flex items-center justify-center w-[300px] overflow-hidden ml-14">
             <Chart />
         </div>
       </div>
