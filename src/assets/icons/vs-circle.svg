@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" width="61" height="61">
+	<title>Ellipse 30</title>
+	<defs>
+		<image  width="61" height="61" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAMAAAApvJHbAAAAAXNSR0IB2cksfwAAAMZQTFRFAAAA////////////////////////////////////////////////////////////////////////////////4/b18fv6nuHePcS9IbuzS8jB4/f1uennWczGPcS81fLxx+7sdNTPL8C4rObjq+XiL7+4kN3ZgtnUZ9HLZtDL5Pf2PcO9WMzG4/f2SsjBPcO84/b2gtjU1fHwddXQ8fr6yO/skN7Z1fLwuernuurnx+3sddTQdNXQS8fByO7snuLe////////54aVtgAAAEJ0Uk5TADBvj6/f7//PvxBAn1CAIGBwkF9//////////////////////////////////////////////////////////08/Tne/fQAAAndJREFUeJytl+l6ojAUhiMIQaS1tuAQK1U6QKejneLsXabL/d/UZIGYhLDa748neXjNWbICoNfIMMeWDSG0nYlpjGq+0smdeoQTZXsnHdlTFWWyvFk762lRpja+ZlwewGkDO3MaWep/7fBnzQMXw89rvO7AEmm9P+8IQ2geA2vwrm5rnZ/3giG8kErVJduibLFwVk8YQmdo0Ez+YL+JbLegmxZGvbxi6EEwhO4RQ5eR9084E438ZCAM4fQIx1neupUrCIKF2mfjrVdsfwrR8rKwVxG6WjNzE18jrOVnBR8BQ2gl5JuU4Rmxbw4mVSTTBjCF1hfEkQU1b2UYoa8SbYJJhU6pvSXmDht3pOvbLiXte3nsMRC30XxPme/UTouxfyAU/8S/v7ZoF8i0paR8TWiWnN9FEMsy/PwPVGQDpSPCTEatv9h6wL8hyVaWPFYKhqXSJO0xtTbYCngyaMEu2+gFpxOWNLhOecavVLwy1cKSDssE5E/bEs/UuNUV9lzQmVif/CG73Zb1P8gBY4XOGJ3x3HM9VeiJNNeIcLjRYxLxqZHgJjXuwsr/mdI8J9qUMaZsapD/uY7ieImKGggy5DWGFZT0irWfhVmuJA2vsUrSWYHS0kmhYCpsa/YWMkPRvzVv5zvG3q+UD+neMlU7k/3+RerIX7Ps9UX9DMI3TLtDThIii+7I/kCaHSbuQHr2AefYsMgP5/+QyPn5DUD7HVGV9WH3FnDWkzbkK1e/0H2gSF3nTdJcNbvjGri78xW3mead7ucXehgXrv0K4zQ9TfyWd0mN13z4xjeR2wxTXu+/7bezVG+at+B7R5YKv0MnDn2HWuP6d+h/2m92YmNJKJIAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

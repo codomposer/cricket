@@ -8,9 +8,12 @@ module.exports = {
       "primary": "#21BBB3",
       "secondary" : "#008A81",
       "border-color" : "#868686",
+      "main" : "#1B1F26",
     },
     fontFamily: {
       zuumeroughbolditalic: ["zuumerough-bolditalic", "sans-serif"],
+      zuumeroughbold: ["zuumerough-bold", "sans-serif"],
+      'dm-sans' : '"DM Sans"'
     },
     screens: {
       sm: { max: "768px", min: "350px" },

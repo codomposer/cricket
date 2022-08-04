@@ -27,8 +27,7 @@ const ScheduleLogo: React.FC<Props> = ({ title, img }) => {
 
   return (
     <>
-      <div className="flex flex-col w-full h-full schedule-container relative">
-        <img src={img} alt="back" className="z-0" />
+      <div className="flex flex-col w-[221px] h-[218px] relative" style={{ backgroundImage: `url(${img})` }}>
         <div className="z-10 absolute w-full h-full flex flex-col items-center pt-[14px]">
           <Logo />
           <h2

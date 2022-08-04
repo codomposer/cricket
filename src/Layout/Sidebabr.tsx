@@ -34,7 +34,7 @@ const items = [
 const Sidebar = () => {
   return (
     <div className="sidebar flex flex-col">
-      <div className="bg-primary py-4">
+      <div className="bg-primary py-3">
         <h1 className="text-[#fff] text-center font-zuumeroughbolditalic ">
           LOGO
         </h1>
