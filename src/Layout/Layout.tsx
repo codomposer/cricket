@@ -11,11 +11,11 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ title, children }) => {
   return (
-    <div className="flex w-full">
+    <div className="flex">
       <ReactHelmet>
         <title>{title}</title>
       </ReactHelmet>
-      <div>
+      <div className="">
         <Sidebar />
       </div>
       <div className="w-full">

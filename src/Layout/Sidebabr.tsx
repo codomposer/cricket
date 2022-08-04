@@ -33,13 +33,13 @@ const items = [
 
 const Sidebar = () => {
   return (
-    <div className="sidebar flex flex-col">
+    <div className="sidebar flex flex-col h-full">
       <div className="bg-primary py-3">
         <h1 className="text-[#fff] text-center font-zuumeroughbolditalic ">
           LOGO
         </h1>
       </div>
-      <div className="bg-theme py-7 flex flex-col">
+      <div className="bg-theme py-7 flex flex-col h-full">
         <ul className="font-medium text-lg text-[#fff] flex flex-col gap-3">
           <div className="flex bg-primary/10 cursor-pointer">
             <li className="flex py-3 pl-11">
