@@ -1,15 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
 import { ReactComponent as Wallet } from "assets/icons/wallet-white.svg";
 import { ReactComponent as Ring } from "assets/icons/ring.svg";
 import { ReactComponent as ArrowDown } from "assets/icons/arrow-down.svg";
+import { ReactComponent as Menu } from "assets/icons/menu-icon.svg";
+
+import { LayoutContext } from "./Root";
 
 const Header = () => {
+  const ctx = useContext(LayoutContext);
+
+  const { navOpen, setNavOpen, navDocked } = ctx;
+
   return (
     <div className="flex items-center justify-center py-[23px] container-main bg-theme">
-      <div className="flex">
+      <Menu className="lg:hidden top-4 left-5 cursor-pointer" onClick={() => setNavOpen(!navOpen)}/>
+
+      <div className="flex lg:ml-0 ml-6">
         <input
           type="text"
-          className="px-4 py-3 w-[400px] rounded-l-[40px] bg-[#008A81]/10 text-[#fff]"
+          className="px-4 py-3 lg:w-[400px] w-[300px] rounded-l-[40px] bg-[#008A81]/10 text-[#fff]"
           placeholder="Search..."
         />
         <button className="flex items-center justify-center bg-[#008A81]/10 rounded-r-[40px] px-4">
@@ -28,10 +37,10 @@ const Header = () => {
           <Wallet /> <span className="pl-1">Connect Wallet</span>
         </button>
         <span className="text-[#fff] ml-8">$0.052</span>
-        <Ring className="ml-6"/>
+        <Ring className="ml-6" />
         <div className="flex items-center ml-6 border-[1px] rounded-[40px] px-2 py-[6px]">
-          <img src="/images/sidebar/avatar.png" alt="avatar"/>
-          <ArrowDown className="mx-2"/>
+          <img src="/images/sidebar/avatar.png" alt="avatar" />
+          <ArrowDown className="mx-2" />
         </div>
       </div>
     </div>

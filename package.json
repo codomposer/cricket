@@ -10,12 +10,18 @@
     "@types/node": "^16.11.47",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@types/react-sidebar": "^3.0.2",
     "react": "^18.2.0",
+    "react-custom-scrollbars-2": "^4.5.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-media": "^1.10.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-sidebar": "^3.0.2",
+    "react-slick": "^0.29.0",
     "recharts": "^2.1.13",
+    "slick-carousel": "^1.8.1",
     "tailwindcss-blend-mode": "^1.0.0",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
@@ -46,6 +52,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.5",
+    "@types/react-slick": "^0.23.10",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7"

@@ -9,8 +9,8 @@ import { ReactComponent as Discord } from "assets/icons/discord.svg";
 const Footer = () => {
   return (
     <div className="bg-main container-main">
-      <div className="flex">
-        <div className="flex bg-secondary/10 rounded-[20px] px-[76px] py-[61px] gap-[155px] w-[1055px]">
+      <div className="flex flex-row flex-wrap xl:flex-nowrap gap-6">
+        <div className="flex bg-secondary/10 rounded-[20px] px-[76px] py-[61px] gap-[155px] w-full basis-3/4">
           <div className="flex flex-col">
             <h1 className="text-[#fff] font-zuumeroughbolditalic text-[80px] leading-[90px]">
               LOGO
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-primary pl-10 pr-8 py-[42px] rounded-[20px] ml-6 w-[444px]">
+        <div className="flex flex-col bg-primary pl-10 pr-8 py-[42px] rounded-[20px] min-w-[444px] basis-1/4">
           <h4>Subscribe Newsletter</h4>
           <div className="flex flex-col mt-7 gap-[17px] items-center">
             <button className="w-full border-[1px] border-[#fff] text-center py-[14px] rounded-[50px]">

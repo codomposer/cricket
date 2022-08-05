@@ -1,8 +1,15 @@
-import React from "react";
-import ReactHelmet from 'react-helmet'
+import VSCarousel from "components/VSCarousel";
+import React, { useState } from "react";
+import ReactHelmet from "react-helmet";
+import { Scrollbars } from "react-custom-scrollbars-2";
+
 import Footer from "./Footer";
 import Header from "./Header";
 import Sidebar from "./Sidebabr";
+import Root from "./Root";
+import SideWrapper from "./SideWrapper";
+
+import { ReactComponent as Menu } from "assets/icons/menu-icon.svg";
 
 type Props = {
   title?: string;
@@ -10,20 +17,31 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = ({ title, children }) => {
+  const height = window.innerHeight;
+
   return (
-    <div className="flex">
+    <Root>
       <ReactHelmet>
         <title>{title}</title>
       </ReactHelmet>
-      <div className="">
-        <Sidebar />
-      </div>
-      <div className="w-full">
-        <Header />
-        {children}
-        <Footer />
-      </div>
-    </div>
+      <SideWrapper>
+        <Scrollbars
+          autoHide
+          autoHideTimeout={1000}
+          autoHideDuration={200}
+          autoHeight
+          autoHeightMin="100%"
+          autoHeightMax={height}
+          universal
+        >
+          <div className="w-full">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Scrollbars>
+      </SideWrapper>
+    </Root>
   );
 };
 

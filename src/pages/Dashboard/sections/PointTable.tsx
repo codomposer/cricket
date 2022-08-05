@@ -15,14 +15,14 @@ const items = [
 
 const PointTable = () => {
   return (
-    <div className="container-main flex">
-      <div className="flex flex-col px-10 py-7 bg-secondary/10 rounded-[20px]">
+    <div className="container-main flex flex-row flex-wrap xl:flex-nowrap gap-6">
+      <div className="flex flex-col px-10 py-7 bg-secondary/10 rounded-[20px] basis-3/4">
         <div className="flex items-center">
           <h3 className="text-[#fff]">POINT TABLE</h3>
           <Line className="ml-6" />
         </div>
-        <div className="flex mt-6">
-          <div className="flex flex-col">
+        <div className="flex flex-row mt-6">
+          <div className="flex flex-col basis-4/12">
             <p className="font-bold text-lg text-[#fff]">Teams</p>
             <div className="flex flex-col gap-9 mt-7 justify-center items-baseline">
               <div className="flex">
@@ -57,7 +57,7 @@ const PointTable = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-12 ml-11">
+          <div className="flex justify-evenly w-full gap-6 ml-auto basis-8/12 ">
             {items.map((item, index) => (
               <PointItem
                 title={item.title}
@@ -68,7 +68,7 @@ const PointTable = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col ml-auto bg-secondary/10 rounded-[20px] pt-7 pl-6 pr-4">
+      <div className="flex flex-col bg-secondary/10 rounded-[20px] pt-7 pl-6 pr-4 basis-1/4">
         <div className="flex items-center">
           <h3 className="text-[#fff] w-max">ODDS BY USERS</h3>
           <LineSmall className="ml-10" />
