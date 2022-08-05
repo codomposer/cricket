@@ -14,6 +14,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-center py-[23px] container-main bg-theme">
       <Menu className="lg:hidden top-4 left-5 cursor-pointer" onClick={() => setNavOpen(!navOpen)}/>
+      <p>{navDocked}</p>
 
       <div className="flex lg:ml-0 ml-6">
         <input
