@@ -64,6 +64,6 @@ h4{
 }
 
 .container-main {
-  @apply px-[30px];
+  @apply px-4 md:px-[30px];
 }
 

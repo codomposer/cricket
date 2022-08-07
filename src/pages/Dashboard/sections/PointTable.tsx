@@ -58,10 +58,10 @@ const items = [
 const PointTable = () => {
   return (
     <div className="container-main flex flex-row flex-wrap xl:flex-nowrap gap-6">
-      <div className="flex flex-col pl-10 pr-14 py-7 bg-secondary/10 rounded-[20px] w-full xl:basis-3/4">
+      <div className="flex flex-col px-6 md:pl-10 md:pr-14 py-7 bg-secondary/10 rounded-[20px] w-full xl:basis-3/4">
         <div className="flex items-center">
           <h3 className="text-[#fff] uppercase">High Potential Minters</h3>
-          <Line className="ml-6" />
+          <Line className="ml-6 w-44 md:w-fix"/>
         </div>
         <div className="flex flex-col justify-evenly w-full gap-6 ml-auto mt-7">
           {items.map((item, index) => (

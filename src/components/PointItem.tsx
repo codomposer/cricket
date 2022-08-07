@@ -30,9 +30,9 @@ const PointItem: React.FC<Props> = ({
   const flag_url = `/images/dashboard/flags/${country}.png`;
   return (
     <div className="flex items-center gap-5 w-full">
-      <div className="flex w-[400px]">
+      <div className="flex w-44 md:w-[400px] flex-wrap gap-[17px]">
         <img src={img} className="w-[50px] h-full rounded-lg" alt="player" />
-        <div className="flex flex-col ml-[17px]">
+        <div className="flex flex-col">
           <p className="font-bold text-sm text-[#fff]">{name}</p>
           <div className="flex mt-auto">
             <img src={flag_url} alt="flag" className="w-[22px] h-full" />
@@ -42,7 +42,7 @@ const PointItem: React.FC<Props> = ({
           </div>
         </div>
       </div>
-      <div className="flex justify-between w-full font-medium text-base">
+      <div className="flex md:justify-between w-full font-medium text-base flex-wrap gap-6">
         <div className="flex items-center">
           {direction == "up" ? <Up /> : <Down />}
           <p className="ml-3">{score1}</p>
