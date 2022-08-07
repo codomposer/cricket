@@ -7,17 +7,17 @@ import { ReactComponent as VS } from "assets/icons/vs.svg";
 const TodayMatch = () => {
   return (
     <div className="flex flex-col container-main ">
-      <div className="flex items-center">
+      <div className="flex items-center mt-4 md:mt-0">
         <h3 className="text-[#fff]">Todays match</h3>
-        <Line className="ml-6" />
+        <Line className="ml-6 w-44 md:w-fit" />
       </div>
       <div
-        className="mt-4 bg-no-repeat bg-cover bg-center flex"
+        className="mt-0 md:mt-4 bg-no-repeat bg-cover bg-center flex flex-wrap items-center justify-center md:justify-start py-6"
         style={{
           backgroundImage: `url(/images/dashboard/back.png)`,
         }}
       >
-        <div className="flex flex-col pl-[74px] pt-[63px] pb-10">
+        <div className="flex flex-col md:pl-[74px] pt-[63px] pb-10">
           <Logo />
           <button className="mt-[67px] px-8 py-3 bg-primary rounded-[40px] flex items-center hover:bg-primary/50 transition-all duration-150">
             <Ball />
@@ -26,7 +26,7 @@ const TodayMatch = () => {
             </span>
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center transform-logo ml-[100px] md:ml-[290px]">
+        <div className="flex flex-col items-center justify-center transform-logo md:ml-[290px]">
           <div className="flex items-center">
             <span className="font-zuumeroughbolditalic text-[80px] leading-[86px] text-[#fff]">
               DC

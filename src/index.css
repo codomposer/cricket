@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  @apply font-zuumeroughbold text-[46px];
+  @apply font-zuumeroughbold text-[36px] leading-[40px] md:text-[46px] md:leading-[50px];
 }
 
 h4{
