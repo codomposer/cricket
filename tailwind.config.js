@@ -17,9 +17,9 @@ module.exports = {
     },
     screens: {
       sm: { max: "768px", min: "350px" },
-      md: "768px" ,
+      md: "769px" ,
       lg: "1080px" ,
-      xl: {min: "1440px"},
+      xl: {min: "1441px"},
     },
   },
   variants: { // all the following default to ['responsive']

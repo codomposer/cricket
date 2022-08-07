@@ -1,27 +1,60 @@
-import React from 'react'
+import React from "react";
+import { ReactComponent as Up } from "assets/icons/up.svg";
+import { ReactComponent as Down } from "assets/icons/down.svg";
 
 type Props = {
-  title?: string,
-  content?: Array<string>,
-}
+  img?: string;
+  name?: string;
+  country?: string;
+  direction?: string;
+  score1?: string;
+  score2?: string;
+  score3?: string;
+  score4?: string;
+  score5?: string;
+  total?: string;
+};
 
-const PointItem:React.FC<Props> = ({title, content}) => {
-  if(!content?.length){
-    return(
-      <div>
-        <h1>No content found</h1>
-      </div>
-    );
-  }
-
+const PointItem: React.FC<Props> = ({
+  img,
+  name,
+  country,
+  direction,
+  score1,
+  score2,
+  score3,
+  score4,
+  score5,
+  total,
+}) => {
+  const flag_url = `/images/dashboard/flags/${country}.png`;
   return (
-    <div className="flex flex-col bg-[#D9D9D9]/5 items-center gap-9 py-6 px-5">
-      <p className="font-medium text-lg text-[#fff]">{title}</p>
-      {content.map((item, index) => (
-        <p className="font-medium text-lg text-[#fff]" key={index}>{item}</p>
-      ))}
+    <div className="flex items-center gap-5 w-full">
+      <div className="flex w-[400px]">
+        <img src={img} className="w-[50px] h-full rounded-lg" alt="player" />
+        <div className="flex flex-col ml-[17px]">
+          <p className="font-bold text-sm text-[#fff]">{name}</p>
+          <div className="flex mt-auto">
+            <img src={flag_url} alt="flag" className="w-[22px] h-full" />
+            <p className="ml-2 uppercase font-medium text-sm text-[#fff]">
+              {country}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between w-full font-medium text-base">
+        <div className="flex items-center">
+          {direction == "up" ? <Up /> : <Down />}
+          <p className="ml-3">{score1}</p>
+        </div>
+        <p>{score2}</p>
+        <p>{score3}</p>
+        <p>{score4}</p>
+        <p>{score5}</p>
+        <p>{total}</p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PointItem
+export default PointItem;

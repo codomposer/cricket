@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { ReactComponent as Wallet } from "assets/icons/wallet-white.svg";
 import { ReactComponent as Ring } from "assets/icons/ring.svg";
 import { ReactComponent as ArrowDown } from "assets/icons/arrow-down.svg";
@@ -12,14 +12,15 @@ const Header = () => {
   const { navOpen, setNavOpen, navDocked } = ctx;
 
   return (
-    <div className="flex items-center justify-center py-[23px] container-main bg-theme">
-      <Menu className="lg:hidden top-4 left-5 cursor-pointer" onClick={() => setNavOpen(!navOpen)}/>
-      <p>{navDocked}</p>
-
-      <div className="flex lg:ml-0 ml-6">
+    <div className="flex items-center justify-center py-[23px] container-main bg-theme flex-wrap gap-[23px]">
+      <div className="flex">
+        <Menu
+          className="lg:hidden top-4 left-5 cursor-pointer w-16 h-full items-center"
+          onClick={() => setNavOpen(!navOpen)}
+        />
         <input
           type="text"
-          className="px-4 py-3 lg:w-[400px] w-[300px] rounded-l-[40px] bg-[#008A81]/10 text-[#fff]"
+          className="px-4 py-3 lg:w-[400px] w-[300px] rounded-l-[40px] bg-[#008A81]/10 text-[#fff] lg:ml-0 ml-4"
           placeholder="Search..."
         />
         <button className="flex items-center justify-center bg-[#008A81]/10 rounded-r-[40px] px-4">
@@ -33,7 +34,8 @@ const Header = () => {
           </svg>
         </button>
       </div>
-      <div className="flex text-[#fff] text-4 font-medium ml-auto items-center">
+
+      <div className="flex text-[#fff] text-4 font-medium md:ml-auto items-center">
         <button className="flex items-center bg-primary rounded-[36px] px-6 py-3  hover:bg-primary/50 transition-all duration-150">
           <Wallet /> <span className="pl-1">Connect Wallet</span>
         </button>

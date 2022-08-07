@@ -17,6 +17,7 @@
 * {
   font-family: "Inter", sans-serif;
   outline: none;
+  @apply text-[#fff];
 }
 
 .sidebar {
@@ -63,6 +64,6 @@ h4{
 }
 
 .container-main {
-  @apply pl-[30px] pr-[50px];
+  @apply px-[30px];
 }
 

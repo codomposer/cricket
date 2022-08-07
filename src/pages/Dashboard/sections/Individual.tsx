@@ -5,19 +5,19 @@ import { ReactComponent as LineRight } from "assets/icons/Line5.svg";
 const Individual = () => {
   return (
     <div className="flex flex-row flex-wrap xl:flex-nowrap gap-6 container-main mt-12 pb-14">
-      <div className="flex flex-col basis-3/4">
+      <div className="flex flex-col xl:basis-3/4">
         <div className="flex items-center">
           <h3 className="text-[#fff]">INDIVIDUAL PLAYER STAKING</h3>
           <LineLeft className="ml-6" />
         </div>
         <img
           src="/images/dashboard/coming.png"
-          className="mt-6 max-w-full min-w-[880px] h-auto"
+          className="mt-6 max-w-full w-max h-auto"
           alt="back"
         />
       </div>
 
-      <div className="flex flex-col basis-1/4">
+      <div className="flex flex-col xl:basis-1/4">
         <div className="flex items-center">
           <h3 className="text-[#fff]">FLEXIBLE GAMING</h3>
           <LineRight className="ml-6" />

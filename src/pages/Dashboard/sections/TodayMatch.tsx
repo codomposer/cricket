@@ -26,7 +26,7 @@ const TodayMatch = () => {
             </span>
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center transform-logo ml-[290px]">
+        <div className="flex flex-col items-center justify-center transform-logo ml-[100px] md:ml-[290px]">
           <div className="flex items-center">
             <span className="font-zuumeroughbolditalic text-[80px] leading-[86px] text-[#fff]">
               DC

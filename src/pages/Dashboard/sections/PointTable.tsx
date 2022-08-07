@@ -5,76 +5,89 @@ import PointItem from "components/PointItem";
 import Chart from "components/Chart";
 
 const items = [
-  { title: "M", content: ["8", "7", "7"] },
-  { title: "W", content: ["6", "5", "5"] },
-  { title: "L", content: ["2", "2", "2"] },
-  { title: "T", content: ["0", "0", "0"] },
-  { title: "PTS", content: ["12", "10", "10"] },
-  { title: "NRR", content: ["+0.547", "+1.263", "-0.171"] },
+  {
+    img: "/images/dashboard/players/player1.png",
+    name: "Virat Kholi",
+    country: "ind",
+    direction: "up",
+    score1: "+2",
+    score2: "+40",
+    score3: "+40",
+    score4: "150",
+    score5: "10",
+    total: "720 Pts",
+  },
+  {
+    img: "/images/dashboard/players/player2.png",
+    name: "Mohammad Hafeez",
+    country: "pak",
+    direction: "down",
+    score1: "-1",
+    score2: "-15",
+    score3: "-15",
+    score4: "10",
+    score5: "15",
+    total: "220 Pts",
+  },
+  {
+    img: "/images/dashboard/players/player3.png",
+    name: "David Warner",
+    country: "aus",
+    direction: "up",
+    score1: "+4",
+    score2: "+18",
+    score3: "+18",
+    score4: "120",
+    score5: "18",
+    total: "905 Pts",
+  },
+  {
+    img: "/images/dashboard/players/player4.png",
+    name: "Joe Root",
+    country: "eng",
+    direction: "down",
+    score1: "-4",
+    score2: "-10",
+    score3: "-10",
+    score4: "70",
+    score5: "21",
+    total: "170 Pts",
+  },
 ];
 
 const PointTable = () => {
   return (
     <div className="container-main flex flex-row flex-wrap xl:flex-nowrap gap-6">
-      <div className="flex flex-col px-10 py-7 bg-secondary/10 rounded-[20px] basis-3/4">
+      <div className="flex flex-col pl-10 pr-14 py-7 bg-secondary/10 rounded-[20px] w-full xl:basis-3/4">
         <div className="flex items-center">
-          <h3 className="text-[#fff]">POINT TABLE</h3>
+          <h3 className="text-[#fff] uppercase">High Potential Minters</h3>
           <Line className="ml-6" />
         </div>
-        <div className="flex flex-row mt-6">
-          <div className="flex flex-col basis-4/12">
-            <p className="font-bold text-lg text-[#fff]">Teams</p>
-            <div className="flex flex-col gap-9 mt-7 justify-center items-baseline">
-              <div className="flex">
-                <img
-                  src="images/dashboard/mark3.png"
-                  className="w-9 h-full"
-                  alt="mark"
-                />
-                <p className="font-medium text-lg text-[#fff]/80 ml-2">
-                  Delhi Capitals
-                </p>
-              </div>
-              <div className="flex">
-                <img
-                  src="images/dashboard/mark4.png"
-                  className="w-9 h-full"
-                  alt="mark"
-                />
-                <p className="font-medium text-lg text-[#fff]/80 ml-2">
-                  Chennai Super Kings
-                </p>
-              </div>
-              <div className="flex">
-                <img
-                  src="images/dashboard/mark5.png"
-                  className="w-[23px] h-full ml-2"
-                  alt="mark"
-                />
-                <p className="font-medium text-lg text-[#fff]/80 ml-2 w-[260px]">
-                  Royal Challengers Bangalore
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-evenly w-full gap-6 ml-auto basis-8/12 ">
-            {items.map((item, index) => (
-              <PointItem
-                title={item.title}
-                content={item.content}
-                key={index}
-              />
-            ))}
-          </div>
+        <div className="flex flex-col justify-evenly w-full gap-6 ml-auto mt-7">
+          {items.map((item, index) => (
+            <PointItem
+              img={item.img}
+              name={item.name}
+              country={item.country}
+              direction={item.direction}
+              score1={item.score1}
+              score2={item.score2}
+              score3={item.score3}
+              score4={item.score4}
+              score5={item.score5}
+              total={item.total}
+              key={index}
+            />
+          ))}
         </div>
       </div>
-      <div className="flex flex-col bg-secondary/10 rounded-[20px] pt-7 pl-6 pr-4 basis-1/4">
+      <div className="flex flex-col bg-secondary/10 rounded-[20px] pt-7 pl-6 pr-4 xl:basis-1/4">
         <div className="flex items-center">
           <h3 className="text-[#fff] w-max">ODDS BY USERS</h3>
           <LineSmall className="ml-10" />
         </div>
         <div className="flex items-center justify-center w-[300px] overflow-hidden ml-14">
-            <Chart />
+          <Chart />
         </div>
       </div>
     </div>
