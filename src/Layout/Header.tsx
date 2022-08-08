@@ -33,7 +33,7 @@ const Header = () => {
       if (accounts) setAccount(accounts[0]);
       // @ts-ignore
       const balance = await library.getBalance(account);
-      alert(ethers.utils.formatEther(balance));
+      console.log(ethers.utils.formatEther(balance));
       setBalance(ethers.utils.formatEther(balance));
     } catch (error: any) {
       setError(error);
