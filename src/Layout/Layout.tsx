@@ -9,8 +9,6 @@ import Sidebar from "./Sidebabr";
 import Root from "./Root";
 import SideWrapper from "./SideWrapper";
 
-import { ReactComponent as Menu } from "assets/icons/menu-icon.svg";
-
 type Props = {
   title?: string;
   children?: React.ReactNode;

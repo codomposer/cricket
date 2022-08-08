@@ -12,35 +12,42 @@ const settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 3.4,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   arrows: false,
   responsive: [
     {
       breakpoint: 1440,
       settings: {
         slidesToShow: 2.5,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
       }
     },
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2.2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
       }                     
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1.6,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
       }                     
     },
     {
-      breakpoint: 480,
+      breakpoint: 425,
       settings: {
-        slidesToShow: 0.84,
-        slidesToScroll: 1.2,
+        slidesToShow: 0.93,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
       }
     }
   ]
@@ -61,7 +68,7 @@ const VSCarousel: React.FC<Props> = ({ left, right }) => {
   }, [right]);
 
   return (
-    <div style={{overflow: "hidden"}}>
+    <div style={{overflow: "hidden"}} className="-translate-x-[123px]s">
       <div className="w-full">
         <Slider ref={(c) => (slider = c)} {...settings} className="mt-[20px]">
           <div>

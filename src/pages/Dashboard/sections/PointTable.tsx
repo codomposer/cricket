@@ -81,12 +81,12 @@ const PointTable = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col bg-secondary/10 rounded-[20px] pt-7 pl-6 pr-4 xl:basis-1/4">
+      <div className="flex flex-col bg-secondary/10 rounded-[20px] py-7 pl-6 pr-4 xl:basis-1/4 w-full">
         <div className="flex items-center">
           <h3 className="text-[#fff] w-max">ODDS BY USERS</h3>
-          <LineSmall className="ml-10" />
+          <LineSmall className="ml-4 md:ml-10 w-40 md:w-fit" />
         </div>
-        <div className="flex items-center justify-center w-[300px] overflow-hidden ml-14">
+        <div className="flex items-center justify-center md:w-[300px] overflow-hidden md:ml-14">
           <Chart />
         </div>
       </div>

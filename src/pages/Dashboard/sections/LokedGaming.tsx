@@ -10,7 +10,7 @@ const LokedGaming = () => {
 
   return (
     <div>
-      <div className="mt-[67px] pb-[47px] flex flex-col container-main">
+      <div className="mt-[67px] pb-[47px] flex flex-col container-main overflow-hidden">
         <div className="flex items-center flex-wrap">
           <div className="flex items-center">
             <h3 className="text-[#fff] w-44 md:w-fit">LOCKED GAMING</h3>

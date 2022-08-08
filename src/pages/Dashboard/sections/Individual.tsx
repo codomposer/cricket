@@ -8,10 +8,10 @@ const Individual = () => {
       <div className="flex flex-col xl:basis-3/4 w-full">
         <div className="flex items-center">
           <h3 className="text-[#fff]">INDIVIDUAL PLAYER STAKING</h3>
-          <LineLeft className="ml-6" />
+          <LineLeft className="ml-2 md:ml-6 w-56 md:w-fit" />
         </div>
         <div
-        className="mt-6 bg-no-repeat bg-cover bg-center"
+        className="mt-6 bg-no-repeat bg-cover bg-center flex w-full h-[292px]"
         style={{
           backgroundImage: `url(/images/dashboard/coming.png)`,
         }}
@@ -24,7 +24,7 @@ const Individual = () => {
           <LineRight className="ml-6" />
         </div>
         <div
-          className="mt-6 w-[444px] h-[292px] flex flex-col items-center bg-no-repeat bg-cover bg-center rounded-[20px]"
+          className="mt-6 w-full h-full md:w-[444px] md:h-[292px] flex flex-col items-center bg-no-repeat bg-cover bg-center rounded-[20px]"
           style={{
             backgroundImage: `url(/images/dashboard/flexible-back.png)`,
           }}
