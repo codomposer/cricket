@@ -58,7 +58,6 @@ const Header = () => {
       connectWallet();
     }
   }, []);
-  useEffect(()=>{});
 
   return (
     <div className="flex items-center justify-center py-[23px] container-main bg-theme flex-wrap gap-[23px]">
