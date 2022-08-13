@@ -67,3 +67,7 @@ h4{
   @apply px-4 md:px-[30px];
 }
 
+.sub-new {
+  @apply border-[1px] border-[#fff] hover:bg-secondary hover:border-secondary transition-all duration-150;
+}
+

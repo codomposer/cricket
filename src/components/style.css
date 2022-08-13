@@ -1,0 +1,61 @@
+.DirectButton {
+  --speed: 0.5s;
+  --distance: 1.3rem;
+  --distance-negative: -1.3rem;
+}
+
+.animate-bottom-top:hover .button-children {
+  animation: translate-y-bottom-top var(--speed) forwards;
+}
+@keyframes translate-y-bottom-top {
+  25% {
+      transform: translateY(var(--distance));
+      opacity: 0;
+  }
+  26% {
+      transform: translateY(var(--distance-negative));
+      opacity: 0;
+  }
+}
+
+.animate-top-bottom:hover .button-children {
+  animation: translate-y-top-bottom var(--speed) forwards;
+}
+@keyframes translate-y-top-bottom {
+  25% {
+      transform: translateY(var(--distance-negative));
+      opacity: 0;
+  }
+  26% {
+      transform: translateY(var(--distance));
+      opacity: 0;
+  }
+}
+
+.animate-left-right:hover .button-children {
+  animation: translate-x-left-right var(--speed) forwards;
+}
+@keyframes translate-x-left-right {
+  25% {
+      transform: translateX(var(--distance-negative));
+      opacity: 0;
+  }
+  26% {
+      transform: translateX(var(--distance));
+      opacity: 0;
+  }
+}
+
+.animate-right-left:hover .button-children {
+  animation: translate-x-right-left var(--speed) forwards;
+}
+@keyframes translate-x-right-left {
+  25% {
+      transform: translateX(var(--distance));
+      opacity: 0;
+  }
+  26% {
+      transform: translateX(var(--distance-negative));
+      opacity: 0;
+  }
+}

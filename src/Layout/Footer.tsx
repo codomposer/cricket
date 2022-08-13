@@ -31,30 +31,30 @@ const Footer = () => {
           <div className="flex flex-col">
             <h4>Company</h4>
             <div className="flex flex-col mt-[18px] gap-5">
-              <div className="flex items-center">
-                <Ball />
+              <div className="flex items-center group cursor-pointer">
+                <Ball className="group-hover:animate-spin" />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Dashboard
                 </p>
               </div>
-              <div className="flex items-center">
-                <Ball />
+              <div className="flex items-center group cursor-pointer">
+                <Ball className="group-hover:animate-spin" />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Whitepaper
                 </p>
               </div>
-              <div className="flex items-center">
-                <Ball />
+              <div className="flex items-center group cursor-pointer">
+                <Ball className="group-hover:animate-spin" />
                 <p className="font-normal text-sm text-[#fff] ml-3">About us</p>
               </div>
-              <div className="flex items-center">
-                <Ball />
+              <div className="flex items-center group cursor-pointer">
+                <Ball className="group-hover:animate-spin" />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Buy Crypto
                 </p>
               </div>
-              <div className="flex items-center">
-                <Ball />
+              <div className="flex items-center group cursor-pointer">
+                <Ball className="group-hover:animate-spin" />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Terms {"&"} Condition
                 </p>
@@ -90,15 +90,15 @@ const Footer = () => {
         <div className="flex flex-col bg-primary pl-10 pr-8 py-[42px] rounded-[20px] w-full md:min-w-[444px] xl:basis-1/4">
           <h4>Subscribe Newsletter</h4>
           <div className="flex flex-col mt-7 gap-[17px] items-center">
-            <button className="w-full border-[1px] border-[#fff] text-center py-[14px] rounded-[50px]">
+            <button className="w-full sub-new text-center py-[14px] rounded-[50px]">
               <span className="font-normal text-base text-[#fff]">Name*</span>
             </button>
-            <button className="w-full border-[1px] border-[#fff] text-center py-[14px] rounded-[50px]">
+            <button className="w-full sub-new text-center py-[14px] rounded-[50px]">
               <span className="font-normal text-base text-[#fff]">
                 Email Address*
               </span>
             </button>
-            <button className="w-full text-center py-[14px] bg-secondary rounded-[50px]">
+            <button className="w-full sub-new py-[14px] rounded-[50px]">
               <span className="font-normal text-base text-[#fff]">
                 Subscribe
               </span>

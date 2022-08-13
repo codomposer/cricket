@@ -20,7 +20,7 @@ const TodayMatch = () => {
         <div className="flex flex-col md:pl-[74px] pt-[63px] pb-10">
           <Logo />
           <button className="mt-[67px] px-8 py-3 bg-primary rounded-[40px] flex items-center hover:bg-primary/50 transition-all duration-150">
-            <Ball />
+            <Ball className="animate-spin"/>
             <span className="font-semibold text-sm text-[#fff] ml-[10px] ">
               Play Now
             </span>

@@ -65,9 +65,6 @@ const settings = {
 const VSCarousel: React.FC<Props> = ({ left, right, content }) => {
   let slider: any = null;
 
-  const [next, setNext] = useState(left);
-  const [previous, setPrevious] = useState(right);
-
   useEffect(() => {
     slider.slickPrev();
   }, [left]);
