@@ -37,7 +37,7 @@ const Sidebar = () => {
         className="sidebar flex flex-col h-full"
         style={{ width: navWidth, height: "100%", overflow: "overlay" }}
       >
-        <div className="bg-primary py-3">
+        <div className="bg-theme py-3">
           {/* <h1 className="text-[#fff] text-center font-zuumeroughbolditalic ">
             LOGO
           </h1> */}
