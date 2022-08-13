@@ -31,29 +31,29 @@ const Footer = () => {
           <div className="flex flex-col">
             <h4>Company</h4>
             <div className="flex flex-col mt-[18px] gap-5">
-              <div className="flex">
+              <div className="flex items-center">
                 <Ball />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Dashboard
                 </p>
               </div>
-              <div className="flex">
+              <div className="flex items-center">
                 <Ball />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Whitepaper
                 </p>
               </div>
-              <div className="flex">
+              <div className="flex items-center">
                 <Ball />
                 <p className="font-normal text-sm text-[#fff] ml-3">About us</p>
               </div>
-              <div className="flex">
+              <div className="flex items-center">
                 <Ball />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Buy Crypto
                 </p>
               </div>
-              <div className="flex">
+              <div className="flex items-center">
                 <Ball />
                 <p className="font-normal text-sm text-[#fff] ml-3">
                   Terms {"&"} Condition

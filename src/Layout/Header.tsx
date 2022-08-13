@@ -29,8 +29,10 @@ const Header = () => {
     try {
       const provider = await web3Modal.connect();
       const library = new ethers.providers.Web3Provider(provider);
-      const accounts: any = await library.listAccounts();
-      if (accounts) setAccount(accounts[0]);
+      // @ts-ignore
+      const account: any = window.ethereum.selectedAddress;
+      setAccount(account);
+      console.log(account);
       // @ts-ignore
       const balance = await library.getBalance(account);
       console.log(ethers.utils.formatEther(balance));
