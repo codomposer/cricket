@@ -4,6 +4,51 @@ import { ReactComponent as LeftBtn } from "assets/icons/left-arrow.svg";
 import { ReactComponent as RightBtn } from "assets/icons/right-arrow.svg";
 import VSCarousel from "components/VSCarousel";
 
+const items = [
+  {
+    title: "WC 2022 5th Warm up Match 5th August, 06:00 pm",
+    team_mark1: "images/dashboard/mark1.png",
+    team_name1: "Delhi Capitals",
+    team_mark2: "/images/dashboard/mark2.png",
+    team_name2: "Kings XI Punjab",
+  },
+  {
+    title: "WC 2022 5th Warm up Match 5th August, 06:00 pm",
+    team_mark1: "images/dashboard/mark1.png",
+    team_name1: "Delhi Capitals",
+    team_mark2: "/images/dashboard/mark2.png",
+    team_name2: "Kings XI Punjab",
+  },
+  {
+    title: "WC 2022 5th Warm up Match 5th August, 06:00 pm",
+    team_mark1: "images/dashboard/mark1.png",
+    team_name1: "Delhi Capitals",
+    team_mark2: "/images/dashboard/mark2.png",
+    team_name2: "Kings XI Punjab",
+  },
+  {
+    title: "WC 2022 5th Warm up Match 5th August, 06:00 pm",
+    team_mark1: "images/dashboard/mark1.png",
+    team_name1: "Delhi Capitals",
+    team_mark2: "/images/dashboard/mark2.png",
+    team_name2: "Kings XI Punjab",
+  },
+  {
+    title: "WC 2022 5th Warm up Match 5th August, 06:00 pm",
+    team_mark1: "images/dashboard/mark1.png",
+    team_name1: "Delhi Capitals",
+    team_mark2: "/images/dashboard/mark2.png",
+    team_name2: "Kings XI Punjab",
+  },
+  {
+    title: "WC 2022 5th Warm up Match 5th August, 06:00 pm",
+    team_mark1: "images/dashboard/mark1.png",
+    team_name1: "Delhi Capitals",
+    team_mark2: "/images/dashboard/mark2.png",
+    team_name2: "Kings XI Punjab",
+  }
+]
+
 const LokedGaming = () => {
   const [next, setNext] = useState(true);
   const [previous, setPrevious] = useState(true);
@@ -31,7 +76,7 @@ const LokedGaming = () => {
             />
           </div>
         </div>
-        <VSCarousel left={next} right={previous} />
+        <VSCarousel left={next} right={previous} content={items}/>
       </div>
     </div>
   );

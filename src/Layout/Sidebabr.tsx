@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars-2";
 
-import { ReactComponent as Logo } from "assets/icons/home.svg";
+import { ReactComponent as Home } from "assets/icons/home.svg";
+import { ReactComponent as Logo } from "assets/icons/logo.svg";
 import { ReactComponent as Whitepaper } from "assets/icons/whitepaper.svg";
 import { ReactComponent as About } from "assets/icons/about.svg";
 import { ReactComponent as Crypto } from "assets/icons/bitcoin-(btc).svg";
@@ -12,27 +13,11 @@ import { ReactComponent as Staking } from "assets/icons/staking.svg";
 import { ReactComponent as Setting } from "assets/icons/setting.svg";
 import { ReactComponent as Line } from "assets/icons/Line.svg";
 import { ReactComponent as Star } from "assets/icons/medal-star.svg";
+import { ReactComponent as Cup } from "assets/icons/schedule-logo.svg";
+import { ReactComponent as VS } from "assets/icons/vs.svg";
+
 import ScheduleLogo from "components/ScheduleLogo";
 import { LayoutContext } from "./Root";
-
-const items = [
-  {
-    title: "IPL T20",
-    img: "/images/sidebar/t20.png",
-  },
-  {
-    title: "IPL T10",
-    img: "/images/sidebar/t10.png",
-  },
-  {
-    title: "WORLD CRICKET LEAGUE",
-    img: "/images/sidebar/league.png",
-  },
-  {
-    title: "WORLD CUP",
-    img: "/images/sidebar/world.png",
-  },
-];
 
 const Sidebar = () => {
   const ctx = useContext(LayoutContext);
@@ -53,15 +38,16 @@ const Sidebar = () => {
         style={{ width: navWidth, height: "100%", overflow: "overlay" }}
       >
         <div className="bg-primary py-3">
-          <h1 className="text-[#fff] text-center font-zuumeroughbolditalic ">
+          {/* <h1 className="text-[#fff] text-center font-zuumeroughbolditalic ">
             LOGO
-          </h1>
+          </h1> */}
+          <Logo className="mx-auto" />
         </div>
         <div className="bg-theme py-7 flex flex-col h-full">
           <ul className="font-medium text-lg text-[#fff] flex flex-col gap-3">
             <div className="flex bg-primary/10 cursor-pointer">
               <li className="flex py-3 pl-11">
-                <Logo />
+                <Home />
                 <span className="ml-5 text-lg font-mediums">Home</span>
               </li>
               <div className="bg-primary w-1 border rounded-l-[40px] border-primary ml-auto"></div>
@@ -111,12 +97,31 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 pt-10 px-6 bg-theme">
-            {items.map((item, index) => {
-              return (
-                <ScheduleLogo title={item.title} img={item.img} key={index} />
-              );
-            })}
+          <div className="flex flex-col gap-6 py-10 px-6 bg-theme">
+            <ScheduleLogo img="/images/sidebar/tba.png">
+              {/* <div className="z-10 absolute w-full h-full flex flex-col items-center pt-[14px]">
+                <Logo />
+                <h2 className="font-zuumeroughbolditalic text-[#fff] transform-logo px-3 text-center">
+                  T10 Cricket League
+                </h2>
+                <div className="flex items-center transform-logo -mt-5">
+                  <span className="font-zuumeroughbolditalic text-3xl text-[#fff]">
+                    INDIA
+                  </span>
+                  <VS className="rotate-6" />
+                  <span className="font-zuumeroughbolditalic text-3xl text-[#fff]">
+                    PAKISTAN
+                  </span>
+                </div>
+              </div> */}
+            </ScheduleLogo>
+            <ScheduleLogo img="/images/sidebar/world_cup.png">
+              <img src="/images/sidebar/cup.png" alt="cup" className="w-[66px] h-[82px] self-center mt-5"/>
+            </ScheduleLogo>
+            <ScheduleLogo img="/images/sidebar/asia_cup.png">
+            </ScheduleLogo>
+            <ScheduleLogo img="/images/sidebar/int_match.png">
+            </ScheduleLogo>
           </div>
         </div>
       </div>
