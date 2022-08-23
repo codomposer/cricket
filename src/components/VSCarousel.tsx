@@ -67,18 +67,18 @@ const VSCarousel: React.FC<Props> = ({ left, right, content }) => {
 
   useEffect(() => {
     slider.slickPrev();
-  }, [left]);
+  }, [left, slider]);
 
   useEffect(() => {
     slider.slickNext();
-  }, [right]);
+  }, [right, slider]);
 
   return (
     <div style={{ overflow: "hidden" }} className="-translate-x-[123px]s">
       <div className="w-full">
         <Slider ref={(c) => (slider = c)} {...settings} className="mt-[20px]">
           {content?.map((item, index) => (
-            <div>
+            <div key={index}>
               <div
                 className="w-[420px] flex flex-col items-center bg-no-repeat bg-cover bg-center rounded-[20px]"
                 style={{

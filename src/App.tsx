@@ -1,16 +1,20 @@
-import React from 'react';
-import './index.css';
-import Layout from 'Layout';
-import Dashborad from 'pages/Dashboard';
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import Layout from "Layout";
+import Dashborad from "pages/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <Layout title='Cricket'>
-        <Dashborad />
-      </Layout>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Layout title="Cricket">
+          <Routes>
+            <Route path="/" element={<Dashborad />} />
+          </Routes>
+        </Layout>
+      </div>
+    </BrowserRouter>
   );
 }
 
