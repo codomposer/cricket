@@ -16,10 +16,11 @@ module.exports = {
       'dm-sans' : '"DM Sans"'
     },
     screens: {
-      sm: { max: "768px", min: "350px" },
-      md: "768px" ,
-      lg: "1080px" ,
-      xl: {min: "1441px"},
+      'sm': { max: "768px", min: "350px" },
+      'md': "768px" ,
+      'lg': "1080px" ,
+      'xl': "1440px",
+      '2xl': "1900px",
     },
   },
   variants: { // all the following default to ['responsive']

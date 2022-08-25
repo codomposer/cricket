@@ -4,7 +4,7 @@ import LokedGaming from './sections/LokedGaming'
 import PointTable from './sections/PointTable'
 import TodayMatch from './sections/TodayMatch'
 
-const Dashborad = () => {
+const Main = () => {
   return(
     <div className="bg-main">
       <TodayMatch />
@@ -15,4 +15,4 @@ const Dashborad = () => {
   )
 }
 
-export default Dashborad
+export default Main

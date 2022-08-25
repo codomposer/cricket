@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars-2";
 
 import { ReactComponent as Home } from "assets/icons/home.svg";

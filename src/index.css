@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 @font-face {
   font-family: "zuumerough-bold";
@@ -17,7 +17,18 @@
 * {
   font-family: "Inter", sans-serif;
   outline: none;
-  @apply text-[#fff];
+  @apply text-[#fff] transition-all duration-300 font-normal;
+}
+
+button {
+  outline: none !important;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .sidebar {
@@ -44,8 +55,12 @@ h3 {
   @apply font-zuumeroughbold text-[36px] leading-[40px] md:text-[46px] md:leading-[50px];
 }
 
-h4{
+h4 {
   @apply font-bold text-2xl text-[#fff];
+}
+
+h5 {
+  @apply font-bold text-xl text-[#fff];
 }
 
 .schedule-container {
@@ -71,3 +86,13 @@ h4{
   @apply border-[1px] border-[#fff] hover:bg-secondary hover:border-secondary transition-all duration-150;
 }
 
+.container-home {
+  @apply xl:w-[1100px] xl:mx-auto 2xl:w-[1300px] 2xl:mx-auto;
+}
+
+.card-gradient {
+  filter: drop-shadow(4px 4px 50px rgba(0, 0, 0, 0.06));
+  border: 1px solid #ffffff2d;
+  backdrop-filter: blur(90px);
+  @apply  py-8 flex flex-col items-center justify-center bg-opacity-10;
+}
