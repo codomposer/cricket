@@ -3,9 +3,9 @@ import React from "react";
 const Collabration = () => {
   return (
     <div className="bg-main relative">
-      <div className="container-home pt-24 pb-[109px] flex flex-wrap gap-[89px] justify-between">
+      <div className="container-home pt-24 pb-[109px] flex flex-wrap gap-24 xl:gap-0 2xl:gap-[89px] justify-center xl:justify-between items-center">
         <div className="relative h-fit">
-          <div className="mt-[25px] relative bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] rounded-[20px] flex flex-col backdrop-blur-[90px] pt-[47px] pb-[52px] pl-[20px] pr-6 w-[380px] border-2 border-[#ffffff3b] h-fit z-10">
+          <div className="mt-[25px] relative bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] rounded-[20px] flex flex-col backdrop-blur-[90px] pt-[47px] pb-[52px] pl-[20px] pr-6 2xl:w-[380px] xl:w-[360px] lg:w-[600px] md:w-[550px] border-2 border-[#ffffff3b] h-fit z-10">
             <p className="uppercase text-lg text-[#000] font-bold">
               COLLABRATION WITH US
             </p>
@@ -21,7 +21,7 @@ const Collabration = () => {
           <div className="absolute top-0 -left-[35px] w-44 h-32 bg-[#018980] rounded-[20px]"></div>
         </div>
         <div className="relative h-fit">
-          <div className="relative bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] rounded-[20px] backdrop-blur-[90px] py-[60px] px-[40px] w-[720px] border-2 border-[#ffffff3b] grid grid-cols-2 gap-[85px] z-10">
+          <div className="relative bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] rounded-[20px] backdrop-blur-[90px] py-[60px] px-[40px] md:w-[550px] lg:w-[600px] 2xl:w-[720px] xl:w-[680px] border-2 border-[#ffffff3b] grid md:sgrid-cols-2 gap-[85px] z-10">
             <div className="flex flex-col">
               <p className="font-bold text-[50px] leading-[61px] text-[#ffffff4d]">
                 01

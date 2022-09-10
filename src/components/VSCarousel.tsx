@@ -76,6 +76,7 @@ const VSCarousel: React.FC<Props> = ({ left, right, content }) => {
   return (
     <div style={{ overflow: "hidden" }} className="-translate-x-[123px]s">
       <div className="w-full">
+        {/* @ts-ignore */}
         <Slider ref={(c) => (slider = c)} {...settings} className="mt-[20px]">
           {content?.map((item, index) => (
             <div key={index}>

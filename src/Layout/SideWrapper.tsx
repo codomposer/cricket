@@ -15,6 +15,7 @@ const SideWrapper: React.FC<NavWrapperProps> = ({ children }) => {
   const { navOpen, setNavOpen, navDocked, navAnimate } = ctx;
 
   return (
+    // @ts-ignore
     <Sidebar
       sidebar={<Nav />}
       open={navOpen}

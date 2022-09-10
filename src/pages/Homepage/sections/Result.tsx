@@ -10,13 +10,13 @@ const Result = () => {
       }}
     >
       <div className="container-home py-[86px]">
-        <h3 className="uppercase text-center">
+        <h3 className="uppercase text-center text-5xl">
           Latest {" "}
           <span className="text-[#008A81] font-zuumeroughbold text-5xl">
             Match Result
           </span>
         </h3> 
-        <div className="mt-[76px] flex justify-between flex-wrap">
+        <div className="mt-[76px] flex flex-col gap-5 lg:gap-0 lg:flex-row justify-center lg:justify-between flex-wrap">
           <MatchResult />
           <MatchResult />
         </div>

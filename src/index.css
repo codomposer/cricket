@@ -60,7 +60,7 @@ h4 {
 }
 
 h5 {
-  @apply font-bold text-xl text-[#fff];
+  @apply font-bold md:text-xl text-[#fff];
 }
 
 .schedule-container {
@@ -87,7 +87,7 @@ h5 {
 }
 
 .container-home {
-  @apply xl:w-[1100px] xl:mx-auto 2xl:w-[1300px] 2xl:mx-auto;
+  @apply sm:w-[350px] sm:mx-auto md:w-[680px] md:mx-auto lg:w-[950px] lg:mx-auto xl:w-[1100px] xl:mx-auto 2xl:w-[1300px] 2xl:mx-auto;
 }
 
 .card-gradient {

@@ -7,10 +7,11 @@ import Team from "./sections/Team";
 import Collabration from "./sections/Collabration";
 import Ready from "./sections/Ready";
 import Client from "./sections/Client";
+import Footer from "./sections/Footer";
 
 const Homepage = () => {
   return (
-    <div className="bg-main ">
+    <div className="bg-main overflow-hidden">
       <Home />
       <MatchList />
       <WhatWeDo />
@@ -19,6 +20,7 @@ const Homepage = () => {
       <Team />
       <Ready />
       <Client />
+      <Footer />
     </div>
   );
 };

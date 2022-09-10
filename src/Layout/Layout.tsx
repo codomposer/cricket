@@ -19,10 +19,12 @@ const Layout: React.FC<Props> = ({ title, children }) => {
 
   return (
     <Root>
+      {/* @ts-ignore */}
       <ReactHelmet>
         <title>{title}</title>
       </ReactHelmet>
       <SideWrapper>
+        {/* @ts-ignore */}
         <Scrollbars
           autoHide
           autoHideTimeout={1000}

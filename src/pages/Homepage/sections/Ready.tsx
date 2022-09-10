@@ -33,14 +33,14 @@ const Ready = () => {
               <Document className="absolute right-8 top-7" />
             </div>
           </div>
-          <div className="w-[1100px] h-[125px] bg-[#008A81] rounded-[10px] absolute -bottom-[82px]"></div>
+          <div className="w-[340px] md:w-[680px] lg:w-[950px] xl:w-[1100px] h-[125px] bg-[#008A81] rounded-[10px] absolute -bottom-[82px]"></div>
         </div>
 
-        <div className="flex justify-between mt-48 bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] backdrop-blur-[90px] border-2 border-[#ffffff3b] rounded-[10px] h-[340px] px-10">
-          <img src="images/home/tool.png" alt="tool" className="h-[400px]" />
-          <div className="my-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-48 bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] backdrop-blur-[90px] border-2 border-[#ffffff3b] rounded-[10px] md:h-[340px] px-10">
+          <img src="images/home/tool.png" alt="tool" className="h-[250px] lg:h-[400px]" />
+          <div className="my-auto flex flex-col items-center justify-center">
             <h3 className="uppercase text-center text-[56px] leading-[62px]">
-              Readt to get&nbsp;{" "}
+              Ready to get&nbsp;{" "}
               <span className="text-[#008A81] font-zuumeroughbold text-[56px] leading-[62px]">
                 Started
               </span>
@@ -50,7 +50,7 @@ const Ready = () => {
               <Send className="ml-6" />
             </div>
           </div>
-          <div className="mt-auto mb-[25px]">
+          <div className="mt-5 md:mt-auto mb-[25px]">
             <Tool />
           </div>
         </div>

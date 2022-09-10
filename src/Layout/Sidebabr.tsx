@@ -23,6 +23,7 @@ const Sidebar = () => {
 
   const { navWidth } = ctx;
   return (
+    // @ts-ignore
     <Scrollbars
       autoHide
       autoHideTimeout={1000}

@@ -4,13 +4,13 @@ const Team = () => {
   return (
     <div className="bg-theme">
       <div className="container-home pt-16 pb-[86px]">
-        <h3 className="uppercase text-center">
+        <h3 className="uppercase text-center text-5xl">
           Our {" "}
           <span className="text-[#008A81] font-zuumeroughbold text-5xl">
             Teams
           </span>
         </h3>
-        <div className="mt-[65px] grid grid-cols-4 gap-[70px]">
+        <div className="mt-[65px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-[70px]">
           <div className="flex justify-center items-center">
             <div className="bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] w-[189px] h-[189px] flex justify-center items-center rounded-full">
               <img src="images/mark/mark3.png" alt="mark3" />
