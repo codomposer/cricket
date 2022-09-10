@@ -21,7 +21,7 @@ const Collabration = () => {
           <div className="absolute top-0 -left-[35px] w-44 h-32 bg-[#018980] rounded-[20px]"></div>
         </div>
         <div className="relative h-fit">
-          <div className="relative bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] rounded-[20px] backdrop-blur-[90px] py-[60px] px-[40px] md:w-[550px] lg:w-[600px] 2xl:w-[720px] xl:w-[680px] border-2 border-[#ffffff3b] grid md:sgrid-cols-2 gap-[85px] z-10">
+          <div className="relative bg-gradient-to-b from-[#ffffff33] to-[#ffffff00] rounded-[20px] backdrop-blur-[90px] py-[60px] px-[40px] md:w-[550px] lg:w-[600px] 2xl:w-[720px] xl:w-[680px] border-2 border-[#ffffff3b] grid md:grid-cols-2 gap-[85px] z-10">
             <div className="flex flex-col">
               <p className="font-bold text-[50px] leading-[61px] text-[#ffffff4d]">
                 01
